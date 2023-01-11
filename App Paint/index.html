@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>COLPOSCOPIA</title>
+</head>
+<body>
+    <div class="container">
+        <section class="tools-board">
+            <div class="row">
+                <label class="title">COLPOSCOPIA</label>
+                <UL class="options">
+                    <li class="option tool" id="triangle">
+                        <img src="icons/triangle.png" alt="">
+                        <span>Epitelio columnar</span>
+                    </li>
+                    <li class="option tool" id="circulo">
+                        <img src="icons/circulo.png" alt="">
+                        <span>Zona acetoblanca</span>
+                    </li>
+                    <li class="option tool" id="renctangulo">
+                        <img src="icons/renctangulo.png" alt="">
+                        <span>Punteado fino</span>
+                    </li>
+                    <li class="option tool" id="flecha">
+                        <img src="icons/flecha.png" alt="">
+                        <span>Punteado grueso</span>
+                    </li>
+                    <li class="option tool" id="cylinder">
+                        <img src="icons/elipse_invertido.png" alt="">
+                        <span>Mosaico fino</span>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="fill-color">
+                        <label for="">Color de relleno</label>
+                    </li>
+                </UL>
+            </div>
+            <div class="row">
+                <label class="title">OPCIONES</label>
+                <UL class="options">
+                    <li class="option active tool" id="brush">
+                        <img src="icons/paint-brush.png" alt="">
+                        <span>Brocha</span>
+                    </li>
+                    <!-- <li class="option tool" id="eraser">
+                        <img src="icons/eraser.png" alt="">
+                        <span>Borrar</span>
+                    </li> -->
+                    <li class="option">
+                        <input type="range" id="size-slider" min="1" max="30" value="5">
+                    </li>
+                </UL>
+            </div>
+            <div class="row colors">
+                <label class="title">COLORES</label>
+                <UL class="options">
+                    <li class="option"></li>
+                    <li class="option selected"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option">
+                        <input type="color" id="color-picker" value="#4A98F7">
+                    </li>
+                </UL>
+            </div>
+            <div class="row buttons">
+                <button class="clear-canvas">Limpiar Imagen</button>
+                <button class="save-canvas">guardar Imagen</button>
+                <button class="download-canvas">Descargar Imagen</button>
+            </div>
+        </section>
+        <section class="drawing-board">
+            <canvas id="canvasId"></canvas>
+        </section>
+    </div>
+</body>
+</html>
